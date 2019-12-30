@@ -1,0 +1,11 @@
+<nav>
+  <div class="container">
+    <a class="logo" href="/"><img src="/assets/img/logo_text_thumb.png"></a>
+    <button class="right-float hide-l toggle-sidebar" onClick="$('.nav-sidebar').slideToggle()">☰</button>
+    <ul class="right-float hide-m- nav-sidebar">
+    {% for item in site.data.navigation %}
+      <li><a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a></li>
+    {% endfor %}
+    </ul>
+  </div>
+</nav>

@@ -1,0 +1,96 @@
+nav {
+	background-color: rgb(84, 27, 160);
+	position: relative;
+	z-index: 2;
+	display: block;
+	border-bottom: 2px solid #FFCC00;
+}
+
+.nav-sidebar {
+  list-style-type: none;
+  margin-top: 0.6rem;
+}
+.nav-sidebar > li {
+  display: inline;
+  padding: 0.8rem;
+  background: rgb(84, 27, 160);
+}
+.nav-sidebar > li a {
+  color: #FFF;
+}
+
+.logo > img {
+	height: 2.5rem;
+	margin-top: 0.25rem;
+}
+
+.promo-vid {
+	position: relative;
+	left: 0; right: 0; top: -1rem;
+	width: 100vw;
+}
+
+.no-margin-h {
+	margin-bottom: 0.4rem;
+}
+
+.circular {
+  border-radius: 50%;
+}
+
+.avatar {
+	
+}
+
+.feed {
+	display: flex;
+	flex-wrap: wrap;
+	background: #fff;
+	padding: 1.5rem;
+	width: 100%;
+	padding-top: 0;
+	transition: filter 0.3s;
+	-webkit-transition: filter 0.2s;
+	cursor: pointer;
+	color: inherit;
+}
+.feed:hover {
+	filter: brightness(0.9);
+}
+.feed .title {
+	display: block;
+	width: 100%;
+	flex: 0 0 auto;
+}
+
+.feed .description {
+	color: var(--grey-40, #444444);
+	font-size: 0.8rem;
+}
+.feed .description.right {
+	float: right;
+}
+
+@media only screen and (max-width: 992px) {
+	nav .nav-sidebar {
+	  display: none;
+	  position: absolute;
+	  left: 0;
+	  top: 3rem;
+	  width: 50vw;
+	  float: none;
+	}
+
+	.nav-sidebar > li {
+	  display: block;
+	  width: 100%;
+	}
+
+	.toggle-sidebar {
+		background: transparent;
+		color: #fff;
+		height: 2.5rem;
+		line-height: 3rem;
+		
+	}
+}

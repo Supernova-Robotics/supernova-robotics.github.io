@@ -1,0 +1,7 @@
+# default setting
+/local/
+*.url
+
+# specific setting
+/.sass-cache
+/_site

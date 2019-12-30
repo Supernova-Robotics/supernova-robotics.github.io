@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | Supernova 5451</title>
+    {% seo %}
+    
+    {% include head.html %}
+    
+    {% if jekyll.environment == "production" %}
+      <script src="my-analytics-script.js"></script>
+    {% endif %}
+    <script>
+      console.log('[DEBUG INFO] this is running under {{ jekyll.environment }}');
+    </script>
+  </head>
+  <body>
+    {% include nav.html %}
+    {{ content }}
+  </body>
+</html>

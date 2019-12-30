@@ -1,0 +1,19 @@
+collections:
+  members:
+    output: true
+    
+defaults:
+  - scope:
+      path: ""
+      type: "members"
+    values:
+      layout: "member"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"

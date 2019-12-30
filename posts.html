@@ -1,0 +1,15 @@
+---
+title: Posts
+---
+<div class="container">
+  <h3>文章 | Posts</h3>
+  <div class="row">
+    {% for post in site.posts %}
+      <a class="feed" href="{{ post.url }}">
+        <div class="title"><h4>{{ post.title }}</h4></div>
+        <div class="description col s8">{{ post.excerpt | strip_html }}</div>
+        <div class="right-align description col s8">{% assign author = site.members | where: 'short_name', post.author | first %}{{ author.name }}&nbsp;&nbsp;&nbsp;&nbsp;{{ post.date | date_to_string }}</div>
+      </a>
+    {% endfor %}
+  </div>
+</div>
